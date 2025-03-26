@@ -1,0 +1,17 @@
+[project]
+name = "simple-conversational-chatbot"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "dotenv (>=0.9.9,<0.10.0)",
+    "langchain-openai (>=0.3.10,<0.4.0)"
+]
+
+[tool.poetry]
+packages = [{include = "simple_conversational_chatbot", from = "src"}]
+
+[tool.poetry.scripts]
+start = "simple_conversational_chatbot.main:main"
