@@ -15,6 +15,7 @@ print("---- Welcome to chatbot ----")
 while True:
     user_input = input("Users : ")
     if(user_input.lower()=="bye"):
+        print(chat_history)
         print("Have a nice day")
         break
     chat_history.append({"role":"user","content":user_input})
