@@ -18,6 +18,6 @@ while True:
         print("Have a nice day")
         break
     chat_history.append({"role":"user","content":user_input})
-    response = llm.chat.completions.create(model="ssdi-dev-4o",messages=chat_history)
+    response = llm.chat.completions.create(model="k",messages=chat_history)
     chat_history.append({"role":"assistant","content":response.choices[0].message.content})
     print("Assistant : ",response.choices[0].message.content)
