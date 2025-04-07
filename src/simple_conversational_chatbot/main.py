@@ -10,7 +10,7 @@ load_dotenv()
 
 def main():
     
-    llm = AzureChatOpenAI(api_version="2024-05-01-preview",azure_deployment="ssdi-dev-4o")
+    llm = AzureChatOpenAI(api_version="2024-05-01-preview",azure_deployment="")
 
     print("Welcome to chatbot \n Have a intresting journey \n Feel free to ask questions\n press /bye to quit")
     while True:
